@@ -1,0 +1,11 @@
+title: Lviv Scala Club
+description: > #
+  Lets become better
+url: "https://lvivscalaclub.github.io/"
+
+githuburl: https://github.com/LvivScalaClub
+
+theme: jekyll-theme-cayman
+paginate: 5
+plugins:
+- jekyll-feed

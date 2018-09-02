@@ -1,0 +1,19 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.page-header {
+
+@include large {
+    padding: 4rem 4rem;
+}
+
+@include medium {
+    padding: 3rem 3rem;
+}
+
+@include small {
+    padding: 2rem 1rem;
+}
+}
