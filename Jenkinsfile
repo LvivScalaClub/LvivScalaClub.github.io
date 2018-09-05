@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy Jenkinsfile
 
-import Scala.text.SimpleDateFormat
+import java.text.SimpleDateFormat
 
 pipeline {
 
