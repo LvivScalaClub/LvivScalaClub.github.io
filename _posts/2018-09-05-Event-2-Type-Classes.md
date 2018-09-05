@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Type Classes"
+title:  "Event#2 Type Classes"
 image: /images/default.jpg
 tags: [implicits,type classes]
 date: 2018-09-05 12:7:00 +0200
