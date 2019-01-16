@@ -23,7 +23,7 @@ pipeline {
     )
     booleanParam(
         name: 'post_footer',
-        description: 'Add "Join us next Wednesday, at 10:00 in room"',
+        description: 'Add "Join us next Wednesday, at 11:00 in room"',
         defaultValue: true
     )
     choice(
@@ -99,7 +99,7 @@ pipeline {
           env.MESSAGE = "${params.post_body.replaceAll("'ll", " will")}" +
               ({params.details_url} ? "${params.details_url}" : "") +
               "\\n" +
-              ({params.post_footer} ? "Join us next Wednesday, at 10:00 in ${params.room}" : "")
+              ({params.post_footer} ? "Join us next Wednesday, at 11:00 in ${params.room}" : "")
 
           env.POST = "---\n" +
               "layout: post\n" +
@@ -112,7 +112,7 @@ pipeline {
               "${params.post_body}" +
               ({params.details_url} ? "[${params.details_url}](${params.details_url})" : "") +
               "\n\n" +
-              ({params.post_footer} ? "Join us next Wednesday, at 10:00 in ${params.room}" : "")
+              ({params.post_footer} ? "Join us next Wednesday, at 11:00 in ${params.room}" : "")
 
           sh 'printenv'
         }
